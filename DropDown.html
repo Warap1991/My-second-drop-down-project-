@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>dropdown menu using button</title>
+</head>
+<style>
+/* set the position of dropdown */
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+/* set the size and position of button on web */
+.button {
+     padding: 10px 30px;
+     font-size: 15px;
+     background-color: rgb(174, 255, 0);
+}
+/* provide css to background of list items */ 
+#list-items {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 185px;
+}
+/* provide css to list items */ 
+#list-items a {
+     display: block;
+     font-size: 18px;
+     background-color: rgb(1, 216, 65);
+     color: black;
+     text-decoration: none;
+     padding: 10px;
+}
+</style>
+
+<script>
+      //show and hide dropdown list item on button click
+      function show_hide() {
+         var click = document.getElementById("list-items");
+         if(click.style.display ==="none") {
+            click.style.display ="block";
+         } else {
+            click.style.display ="none";
+         } 
+      }
+   </script>
+
+<body>
+<div class="dropdown">
+  <button onclick="show_hide()" class="button">Choose Language</button>
+   <center>
+      <!-- dropdown list items will show when we click the drop button --> 
+      <div id="list-items">
+         <a href="https://www.google.com/search?q=google+traduction+hindi&sxsrf=ALiCzsYQQb0d1Jd8-RB_TUMiJLkJQYlAyg%3A1671553060461&ei=JOChY6DnG9HygQb9pp7YAg&ved=0ahUKEwigiZGzzIj8AhVRecAKHX2TBysQ4dUDCA8&uact=5&oq=google+traduction+hindi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQgAQQRhD_ATIICAAQgAQQywEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CggAEEcQ1gQQsAM6BwgAELADEEM6BAgAEEM6CggAELEDEIMBEEM6CggAEIAEEIcCEBQ6CAgAEBYQHhAPOgoIABAWEB4QDxAKSgQIQRgASgQIRhgAUGBYmRBg7B1oAXABeACAAbkHiAHPJJIBBTUtMS41mAEAoAEByAEKwAEB&sclient=gws-wiz-serp" target="_blank"> Hindi </a>
+         <a href="https://www.google.com/search?q=google+traduction+english&sxsrf=ALiCzsaUKMkHjTWhvD7-WM7-bfWo3dxBHw%3A1671553251720&ei=4-ChY5LOK46Q8gKXxI-IBw&ved=0ahUKEwjSy6qOzYj8AhUOiFwKHRfiA3EQ4dUDCA8&uact=5&oq=google+traduction+english&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIPCAAQgAQQhwIQFBBGEP8BMgUIABCABDIICAAQgAQQywEyBQgAEIAEMgUIABCABDIFCAAQgAQyCAgAEIAEEMsBMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgcIABCwAxBDOgcIABCABBAKOgoIABCABBCHAhAUSgQIQRgASgQIRhgAUNATWLIsYJE4aAJwAXgAgAHcDIgB0zmSAQk1LTIuMi4yLjGYAQCgAQHIAQnAAQE&sclient=gws-wiz-serp" target="_blank"> English </a>
+         <a href="google.com/search?q=google+traduction+spanish&sxsrf=ALiCzsYJNWiVX25OElZ8lfoqRrYurlTV3A%3A1671553438158&ei=nuGhY7ClCbSRhbIPxYW86AM&ved=0ahUKEwiw7J3nzYj8AhW0SEEAHcUCDz0Q4dUDCA8&uact=5&oq=google+traduction+spanish&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQgAQQRhD_ATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCAAQsAMQQzoKCAAQgAQQhwIQFEoECEEYAEoECEYYAFDNNliARmD8TmgDcAF4AYABigmIAdUkkgEJNC0yLjQuMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz-serp" target="_blank"> Spanish </a>
+         <a href="https://www.google.com/search?q=google+traduction+chinese&sxsrf=ALiCzsaZvEt_mW5fiX90HXVpKnKitdhmOw%3A1671553542389&ei=BuKhY5KxF8-ahbIP0ImuoAs&ved=0ahUKEwiSzPeYzoj8AhVPTUEAHdCEC7QQ4dUDCA8&uact=5&oq=google+traduction+chinese&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQywEyBQgAEIAEMggIABCABBDLATIFCAAQgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CggAEEcQ1gQQsAM6BwgAELADEEM6CAgAEBYQHhAKSgQIQRgASgQIRhgAUOcLWPsUYPsaaAJwAXgBgAGMB4gBhiGSAQU1LTMuM5gBAKABAcgBCcABAQ&sclient=gws-wiz-serp" target="_blank">Chinese </a>
+         <a href="https://www.google.com/search?q=google+traduction+japanese&sxsrf=ALiCzsa4qXOyr_70kEaxEzkmmM_kNz32Pw%3A1671553578868&ei=KuKhY4zLNIqGgQb8gIfwBA&ved=0ahUKEwiMiKqqzoj8AhUKQ8AKHXzAAU4Q4dUDCA8&uact=5&oq=google+traduction+japanese&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQgAQQDTIICAAQgAQQywEyBwgAEIAEEA0yBwgAEIAEEA0yBwgAEIAEEA0yBggAEAgQHjoKCAAQRxDWBBCwAzoFCAAQgAQ6BggAEBYQHjoICAAQFhAeEAo6BggAEB4QDUoECEEYAEoECEYYAFCdBljEMGDnQ2gBcAF4AYAB5gaIAbknkgEHNC0yLjMuM5gBAKABAcgBCMABAQ&sclient=gws-wiz-serp" target="_blank"> Japanese </a>
+      </div>
+   </center>
+   
+</body>
+</html>
+
+ 
